@@ -1,33 +1,23 @@
+"use client";
+
 import React from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
+import Project from "./project";
 
-export default function projects() {
+export default function Projects() {
+
+
   return (
-    <section >
-    <SectionHeading>My projects</SectionHeading>
-    <div>
-      {projectsData.map((project, index) => (
-        <React.Fragment key={index}>
-          <Project {...project} />
-        </React.Fragment>
-      ))}
-    </div>
-  </section>
+    <section  id="projects" className="scroll-mt-28 mb-28">
+      <SectionHeading>My projects</SectionHeading>
+      <div>
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
+        ))}
+      </div>
+    </section>
   );
-}
-
-type ProjectProps = (typeof projectsData)[number];
-
-function Project({ title, description, tags, imageUrl }: ProjectProps) {
-  return;
-  <section>
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <ul>
-      {tags.map((tag, index) => (
-        <li key={index}>{tag}</li>
-      ))}
-    </ul>
-  </section>;
 }
