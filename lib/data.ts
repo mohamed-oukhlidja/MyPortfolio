@@ -31,7 +31,7 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+] as const //don't want to change it ;
 
 export const experiencesData = [
   {
@@ -82,7 +82,8 @@ export const projectsData = [
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
-] as const;
+] as const //don't want to change it ;
+
 
 export const skillsData = [
   "HTML",
@@ -104,4 +105,4 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
-] as const;
+] as const //don't want to change it ;
