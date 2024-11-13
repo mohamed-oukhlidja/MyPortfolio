@@ -7,7 +7,7 @@ import Link from "next/link";
 import clsx from "clsx";
 
 export default function Header() {
-  const [activeSection, setActive] = useState("Home");
+  const [activeSection, setActiveSection] = useState("Home");
 
   return (
     <header className="z-[999] relative">
@@ -34,7 +34,7 @@ export default function Header() {
                   }
                 )}
                 href={link.hash}
-                onClick={() => setActive(link.name)}
+                onClick={() => setActiveSection(link.name)}
               >
                 {link.name}
                 {link.name === activeSection && (
